@@ -1,15 +1,16 @@
 ################################
-# Name: Tshering Dorjio
+# Name: Tshering Dorji
 # Department: 1 Mechanical Engineering
 # Student ID: 02230276
 ################################
 # REFERENCES
-# Links that you referred while solving
-# the problem
-# http://link.to.an.article/video.com
+#Python File Open : https://www.w3schools.com/python/python_file_handling.asp and https://www.dataquest.io/blog/read-file-python/#:~:text=Python%20provides%20a%20built%2Din,we%20can%20manipulate%20its%20content
+#CSF 101 Notes
+#Youtube: https://www.youtube.com/watch?v=Uh2ebFW8OYM
+#Youtube: https://www.youtube.com/watch?v=DmHSwTiD5Tk
 ################################
 # SOLUTION
-# Your Solution Score:
+# Your Solution Score: 50223
 # Put your number here:
 # input_6_cap1
 ################################
@@ -25,9 +26,9 @@ def read_input():
 
 # solution
 def calculate_score(game_data):
-    choices_score = {'A': 1, 'B': 2, 'C': 3}
-    outcome_scores = {'X': 0, 'Y': 3, 'Z': 6}
-    total_score = 0
+    choices_score = {'A': 1, 'B': 2, 'C': 3}    #using dictionary to map choice to score
+    outcome_scores = {'X': 0, 'Y': 3, 'Z': 6}   #using dictionary to map outcome to score
+    total_score = 0     #initial score is zero
 
     for opponent_move, outcomes in game_data: 
         your_move = 0
